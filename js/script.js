@@ -75,7 +75,7 @@ create.onclick = function (){
         Swal.fire({
             icon: "error",
             title: "Sorry...",
-            text: "Products Count Can't Be More ttan 50 Product!",
+            text: "Products Count Can't Be More than 50 Product!",
         });
     }
     else{
