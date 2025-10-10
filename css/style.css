@@ -1,5 +1,8 @@
 
 /* public */
+html{
+    scrollbar-color: #d8eeff var(--secodary-color);
+} 
 *{
     box-sizing: border-box;
     padding: 0;
