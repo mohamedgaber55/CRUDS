@@ -1,7 +1,7 @@
 
 /* public */
 html{
-    scrollbar-color: #d8eeff var(--secodary-color);
+    scrollbar-color: var(--secodary-color) #d8eeff ;
 } 
 *{
     box-sizing: border-box;
