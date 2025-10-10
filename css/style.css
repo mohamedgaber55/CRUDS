@@ -103,6 +103,7 @@ input:focus::placeholder{
 .cruds{
     width: 100%;
     margin: auto;
+    min-height: 100vh;
 }
 .cruds .container{
     max-width: 850px;
@@ -196,7 +197,7 @@ input:focus::placeholder{
     .cruds .content .inputs button,
     .cruds .content .outputs button,
     .delete-all{
-        font-size: 16px;
+        font-size: 15px;
     }
     .price-content input::placeholder{
         font-size: 12px;
