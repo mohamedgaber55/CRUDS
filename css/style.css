@@ -1,0 +1,228 @@
+
+/* public */
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "Cairo", sans-serif;
+}
+:root{
+    --main-color: #0b3d56;
+    --secodary-color: #4baeff;
+    --main-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
+    --secondary-shadow: 0px 2px 15px 0px rgba(0, 0, 0, 0.1);
+}
+input{
+    border: none;
+    outline: none;
+    box-shadow: var(--main-shadow);
+    caret-color: var(--secodary-color);
+    font-size: 16px;
+    margin: 10px 0;
+    padding: 10px;
+    transition: .3s;
+    width: 100%;
+    border-radius: 4px;
+}
+
+/* start-container-media */
+@media (min-width: 576px) {
+    .container{
+        width: 540px;
+    }
+}
+@media (min-width: 768px) {
+    .container{
+        width: 720px;
+    }
+}
+@media (min-width: 922px) {
+    .container{
+        width: 960px;
+    }
+}
+@media (min-width: 1200px) {
+    .container{
+        width: 1140px;
+    }
+}
+
+.cruds .content .inputs button,
+.cruds .content .outputs button,
+.delete-all{
+    width: 100%;
+    padding: 3px 0;
+    border: none;
+    border-radius: 50px;
+    background-color: var(--secodary-color);
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: .3s;
+}
+.cruds .content .inputs button:hover,
+.cruds .content .outputs button:hover{
+    background-color: #2196F3;
+    letter-spacing: .5px;
+}
+input:focus::placeholder{
+    color: transparent;
+}
+.delete-all{
+    margin: 25px 0 -10px;
+    background-color: #ff4d20;
+}
+.delete-all:hover{
+    background-color: #e8471f;
+    letter-spacing: .5px;
+}
+
+/* content */
+.cruds .header{
+    text-align: center;
+    width: 100%;
+}
+.cruds .header h2{
+    margin-left: auto;
+    margin-right: auto;
+    color: var(--main-color);
+    max-width: 400px;
+    background-color: white;
+    text-align: center;
+    padding: 5px;
+    font-size: 30px;
+    box-shadow: var(--secondary-shadow);
+    border-radius: 0px 0px 100px 100px;
+}
+.cruds .header p{
+    color: var(--main-color);
+    margin: 15px 0;
+    font-size: 19px;
+}
+.cruds{
+    width: 100%;
+    margin: auto;
+}
+.cruds .container{
+    max-width: 850px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+.cruds .content{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    box-shadow: var(--secondary-shadow);
+    padding: 50px;
+}
+.cruds .content .price-content, .cruds .content .count-content{
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+}
+.cruds .content .price-content > *:not(:last-child){
+    margin: 0 10px 0 0;
+}
+.total{
+    background-color: #ff4d20;
+    color: #fff;
+    font-size: 16px;
+    padding: 0px 10px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 4px;
+}
+.total::before{
+    content: 'Total:';
+}
+.cruds .content .count-content input:not(:first-child){
+    margin-left: 10px;
+}
+.cruds .content .search-type{
+    display: flex;
+    justify-content: space-between;
+}
+.cruds .content .search-type button{
+    width: 49%;
+}
+
+/* table */
+.table-responsive {
+    margin-top: 20px;
+    text-align: center;
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+    border-collapse: collapse;
+    table-layout: auto;  
+}
+.table-responsive .btn{
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 4px;
+    background-color: #58cb5bff;
+    color: #fff;
+    padding: 2px 7px;
+    margin-left: 2px;
+    font-weight: 600;
+}
+.table-responsive .delete{
+    background-color: #ff4d20;
+}
+.table-responsive th,
+.table-responsive td,
+.table-responsive tr{
+    color: #0b3d56;
+    white-space: nowrap;
+    padding: 10px;
+    text-align: center;
+}
+
+@media (max-width: 921px) {
+    .table-responsive {
+        display: block;
+    }
+}
+
+@media (max-width: 767px) {
+    .cruds .content{
+        box-shadow: none;
+        padding: 0;
+    }
+    .cruds .content .inputs button,
+    .cruds .content .outputs button,
+    .delete-all{
+        font-size: 16px;
+    }
+    .price-content input::placeholder{
+        font-size: 12px;
+    }
+}
+
+footer{
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+    border-top: 1px solid #ddd;
+    padding: 5px;
+    background-color: #fff;
+}
+footer span{
+    color: #03A9F4;
+    font-weight: bold;
+}
+
+
+.swal2-styled{
+    background-color: var(--secodary-color);
+}
+.swal2-styled:hover{
+    background-color: #2196F3;
+}
+.swal2-title{
+    color: #2196F3;
+}

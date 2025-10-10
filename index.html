@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUDS</title>
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Lato&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <div class="cruds">
+        <div class="container">
+            <div class="header">
+                <h2>CRUDS</h2>
+                <p>Product Management System</p>
+            </div>
+            <div class="content">
+                <div class="inputs">
+                    <div class="title-content">
+                        <input type="text" placeholder="Product Title" class="title">
+                    </div>
+                    <div class="price-content">
+                        <input type="number" placeholder="Price" class="price">
+                        <input type="number" placeholder="Taxes" class="taxes">
+                        <input type="number" placeholder="Ads" class="ads">
+                        <input type="number" placeholder="Discount" class="discount">
+                        <small class="total"></small>
+                    </div>
+                    <div class="count-content">
+                        <input type="text" placeholder="Category" class="category">
+                        <input type="text" placeholder="Count" class="count">
+                    </div>
+                    <!-- <div class="create"> -->
+                        <button class="create">Create</button>
+                    <!-- </div> -->
+                </div>
+
+                <div class="outputs">
+                    <div class="search-input">
+                        <input type="text" placeholder="Search" class="search">
+                    </div>
+                    <div class="search-type">
+                        <button class="search-title">Search By Title</button>
+                        <button class="search-category">Search By Category</button>
+                    </div>
+                </div>
+
+                <div class="deleteAll">
+
+                </div>
+
+                <table class="table-responsive">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>TITLE</th>
+                            <th>PRICE</th>
+                            <th>TAXES</th>
+                            <th>ADS</th>
+                            <th>DISCOUNT</th>
+                            <th>TOTAL</th>
+                            <th>CATEGORY</th> 
+                            <th>ACTIONS</th>
+                        </tr>
+                    </thead>
+
+                    <tbody class="tBody">
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <footer>
+            Coded By <span>Mohamed Gaber</span>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./js/script.js"></script>
+</body>
+</html>
