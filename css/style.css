@@ -158,7 +158,7 @@ input:focus::placeholder{
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
     -ms-overflow-style: -ms-autohiding-scrollbar;
-    scrollbar-color: #d8eeff var(secondary-color);
+    scrollbar-color: #d8eeff var(--secodary-color);
     border-collapse: collapse;
     table-layout: auto;  
 }
