@@ -9,6 +9,9 @@ html{
     margin: 0;
     font-family: "Cairo", sans-serif;
 }
+body{
+   position: relative;
+} 
 :root{
     --main-color: #0b3d56;
     --secodary-color: #4baeff;
@@ -210,6 +213,7 @@ input:focus::placeholder{
 }
 
 footer{
+    position: absolute;
     text-align: center;
     width: 100%;
     border-top: 1px solid #ddd;
