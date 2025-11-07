@@ -215,6 +215,7 @@ footer{
     border-top: 1px solid #ddd;
     padding: 5px;
     background-color: #fff;
+    bottom: 0
 }
 footer span{
     color: #03A9F4;
